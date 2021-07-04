@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainy Day</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video loop autoplay muted class="video" src="videos/video.mp4"></video>
+
+      <!-- link to original audio https://www.youtube.com/watch?v=HV3DaH3XmdM -->
+      <audio loop autoplay src="audios/audio.mp3"></audio>
+      <div class="content">
+        <div class="weather-container">
+          <h1 class="weather">
+            <i class="fas <%= icon %>"></i> <%= temperature %>
+          </h1>
+          <h1 class="location"><%= location %></h1>
+        </div>
+
+        <div class="time-container">
+          <h1 class="time"></h1>
+          <h1 class="day"></h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
