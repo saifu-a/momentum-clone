@@ -19,19 +19,25 @@
   </head>
   <body>
     <div class="container">
-      <video loop autoplay muted class="video" src="videos/video.mp4"></video>
+      <video loop muted class="video" src="videos/video.mp4"></video>
 
       <!-- link to original audio https://www.youtube.com/watch?v=HV3DaH3XmdM -->
-      <audio loop autoplay src="audios/audio.mp3"></audio>
+      <audio loop src="audios/audio.mp3"></audio>
       <div class="content">
-        <div class="weather-container">
+        <div class="button-container">
+          <button class="play-button">
+            <i class="fas fa-play-circle fa-8x"></i>
+          </button>
+        </div>
+
+        <div class="hide weather-container">
           <h1 class="weather">
             <i class="fas <%= icon %>"></i> <%= temperature %>°C
           </h1>
           <h1 class="location"><%= location %></h1>
         </div>
 
-        <div class="time-container">
+        <div class="hide time-container">
           <h1 class="time"></h1>
           <h1 class="day"></h1>
         </div>
